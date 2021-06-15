@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a.vkube.controller.AdminWindow">
+   <children>
+      <ImageView fitHeight="444.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/adm.jpeg" />
+         </image>
+      </ImageView>
+      <Button layoutX="130.0" layoutY="265.0" mnemonicParsing="false" onAction="#addDriverLicense" text="Добавить ВУ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="113.0" layoutY="305.0" mnemonicParsing="false" onAction="#addPassport" text="Добавить паспорт">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="195.0" layoutY="344.0" mnemonicParsing="false" onAction="#addDriver" text="Добавить водителя" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="344.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="344.0" mnemonicParsing="false" onAction="#addDisp" prefHeight="33.0" prefWidth="162.0" text="Добавить диспетчера" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="344.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="endButton" layoutX="107.0" layoutY="391.0" mnemonicParsing="false" onAction="#endAction" prefHeight="33.0" prefWidth="155.0" text="Завершить сессию" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="391.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="131.0" layoutY="200.0" mnemonicParsing="false" onAction="#editDriverLicense" text="Изменить ВУ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="116.0" layoutY="163.0" mnemonicParsing="false" onAction="#editPassport" text="Изменить паспорт">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="193.0" layoutY="118.0" mnemonicParsing="false" onAction="#editDriver" prefHeight="33.0" prefWidth="146.0" text="Изменить водителя">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="16.0" layoutY="118.0" mnemonicParsing="false" onAction="#editDisp" prefHeight="33.0" prefWidth="162.0" text="Изменить диспетчера">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="36.0" layoutY="34.0" prefHeight="56.0" prefWidth="298.0" text="При добавлении водителя - добавьте в первую очередь ВУ и паспорт, а при добавлении диспетчера - только паспорт!" textAlignment="CENTER" textFill="#cae847" wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="-2.0" prefHeight="28.0" prefWidth="355.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Закрыть" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" text="О программе" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
